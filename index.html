@@ -16,32 +16,68 @@
 	font-family:'Lato', sans-serif;
 }
 .profile h1 {
-	padding: 20px 0 10px 30px;
+	padding: 20px 0 10px 0;
 	font-size: 1.5em;
 }
 .profile p {
-	padding: 0 0 10px 30px;
+	padding: 0 0 10px 0;
 }
-.portal {
-	
+
+.pulse {
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 20%;
+  background: cornflowerblue;
+  cursor: pointer;
+  box-shadow: 0 0 0 rgba(127, 66, 224, 0.4);
+  animation: pulse 2s infinite;
 }
-.portal img {
-	border-radius:50px;
+	.pulse img {
+	border-radius:20px;
 	float:left;
-	margin: 0 20px 0 0;
+	}
+.pulse:hover {
+  animation: pulse 1s infinite;
 }
 
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(127, 66, 224, 0.4);
+  }
+  70% {
+      -webkit-box-shadow: 0 0 0 10px rgba(127, 66, 224, 0);
+  }
+  100% {
+      -webkit-box-shadow: 0 0 0 0 rgba(127, 66, 224, 0);
+  }
+}
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(127, 66, 224, 0.4);
+    box-shadow: 0 0 0 0 rgba(127, 66, 224, 0.4);
+  }
+  70% {
+      -moz-box-shadow: 0 0 0 10px rgba(127, 66, 224, 0);
+      box-shadow: 0 0 0 10px rgba(127, 66, 224, 0);
+  }
+  100% {
+      -moz-box-shadow: 0 0 0 0 rgba(127, 66, 224, 0);
+      box-shadow: 0 0 0 0 rgba(127, 66, 224, 0);
+  }
+}
 </style>
-
 </head>
 <body>
 <div class="wrapper">
 	<div class="profile">
-    	<div class="portal">
-        <a href="http://www.linkedin.com/pub/enoch-adams/a4/3bb/b42" target="_blank"><img src="http://m.c.lnkd.licdn.com/mpr/pub/image-R330ZRjlCrR0-mj6pfnBPnjGZcA_sLRx8g2Bhw9l0ShR5xJ5233B3m4SNSgfsv86LIy/enoch-adams.jpg"></a>
-        </div>
-        <h1>Hi, my name is Enoch Adams</h1>
-        <p>I am a Web Designer and I build experiences on the web</p>
+    	<span class="pulse">
+			<a href="http://www.linkedin.com/pub/enoch-adams/a4/3bb/b42">
+				<img src="http://m.c.lnkd.licdn.com/mpr/pub/image-R330ZRjlCrR0-mj6pfnBPnjGZcA_sLRx8g2Bhw9l0ShR5xJ5233B3m4SNSgfsv86LIy/enoch-adams.jpg" alt="Linkedin profile image dot jpg">
+			</a>
+		</span>
+        <h1>Greetings, my name is Enoch Daniel Adams</h1>
+        <p>I am a Theophilus building experiences by the grace of Jesus.</p>
     </div>
 </div>
 </body>
